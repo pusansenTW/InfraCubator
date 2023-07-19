@@ -1,0 +1,6 @@
+docker pull nginx
+docker run -p 80:80 --name asg1 -d nginx
+docker logs asg1
+docker exec -it asg1 /bin/bash
+exit
+docker stop asg1
