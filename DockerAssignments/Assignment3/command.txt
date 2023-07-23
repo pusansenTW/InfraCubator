@@ -1,0 +1,2 @@
+docker build -t go-app:latest .
+docker run -d -p 8080:8080 --name go-app-container go-app:latest
